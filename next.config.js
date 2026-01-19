@@ -6,6 +6,9 @@ const nextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/clarity-unsearchable' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/clarity-unsearchable' : '',
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig

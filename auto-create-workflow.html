@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto-Create GitHub Workflow</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .code-block { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        button { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #218838; }
+        .step { margin: 20px 0; padding: 15px; background: #e7f3ff; border-left: 4px solid #0066cc; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Auto-Setup GitHub Pages Workflow</h1>
+    
+    <div class="step">
+        <h2>Step 1: Create Workflow File</h2>
+        <p>Click the button below to open GitHub with the file pre-filled:</p>
+        <button onclick="openGitHub()">Open GitHub File Creator</button>
+        <p><small>The file path and content will be pre-filled for you!</small></p>
+    </div>
+
+    <div class="step">
+        <h2>Step 2: Copy This Content</h2>
+        <p>If the button doesn't work, copy this entire block:</p>
+        <div class="code-block" id="workflowContent">
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './out'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        </div>
+        <button onclick="copyContent()">Copy to Clipboard</button>
+    </div>
+
+    <div class="step">
+        <h2>Step 3: Enable Pages</h2>
+        <p>After committing the file, enable Pages:</p>
+        <button onclick="window.open('https://github.com/LearnwithEB/clarity-unsearchable/settings/pages', '_blank')">Open Pages Settings</button>
+        <p>Select "GitHub Actions" as the source.</p>
+    </div>
+
+    <script>
+        function openGitHub() {
+            const content = document.getElementById('workflowContent').innerText;
+            const encoded = encodeURIComponent(content);
+            const url = `https://github.com/LearnwithEB/clarity-unsearchable/new/main?filename=.github/workflows/deploy.yml&value=${encoded}`;
+            window.open(url, '_blank');
+        }
+
+        function copyContent() {
+            const content = document.getElementById('workflowContent').innerText;
+            navigator.clipboard.writeText(content).then(() => {
+                alert('✅ Copied to clipboard! Now paste it in GitHub.');
+            });
+        }
+    </script>
+</body>
+</html>
