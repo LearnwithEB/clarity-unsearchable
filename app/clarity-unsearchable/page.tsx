@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
 import { HeroGeometric } from "@/components/ui/shape-landing-hero"
 import { CubeLoader } from "@/components/ui/cube-loader"
+import { FlipWords } from "@/components/ui/flip-words"
 
 export default function ClarityUnsearchablePage() {
   const { scrollYProgress } = useScroll()
@@ -23,9 +24,14 @@ export default function ClarityUnsearchablePage() {
               <div className="flex flex-col gap-4">
                 <p className="bp-section-kicker">Session overview</p>
                 <h1 className="text-3xl font-bold md:text-4xl">Clarity and the Unsearchable</h1>
-                <p className="text-lg font-medium text-[var(--bp-ink-soft)]">
-                  AI, Life's Blueprint, and Wisdom Technology Cannot Store
-                </p>
+                <div className="text-lg font-medium text-[var(--bp-ink-soft)] flex flex-wrap items-center gap-1">
+                  <FlipWords
+                    words={["AI Literacy", "Generational Wisdom", "Life's Blueprint", "Character Design"]}
+                    duration={3000}
+                    className="font-bold text-[var(--bp-ink)]"
+                  />
+                  <span>and the Design of a Life's Purpose</span>
+                </div>
               <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
                 This session links generative AI, Dr King's "Life's Blueprint" speech, and the unsearchable wisdom elders carry. We explore how AI amplifies intention, why wisdom passes through memory not algorithms, and how to build tools that honor the story behind you as you build what is ahead of you.
               </p>
@@ -113,9 +119,21 @@ export default function ClarityUnsearchablePage() {
               <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
                 We live in an age of infinite information. But as we embrace Generative AI, we must realize a fundamental truth: AI acts as a magnifying glass for the user's intent.
               </p>
-              <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                Input confusion, and you get amplified chaos. Input wisdom, and you get amplified impact. Transformation comes from proximity and people. Information is searchable; wisdom is not.
-              </p>
+              <div className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
+                <span>Input </span>
+                <FlipWords
+                  words={["confusion", "clarity", "wisdom", "intention"]}
+                  duration={2500}
+                  className="font-semibold text-[var(--bp-ink)]"
+                />
+                <span> and you get amplified </span>
+                <FlipWords
+                  words={["chaos", "impact", "transformation", "purpose"]}
+                  duration={2500}
+                  className="font-semibold text-[var(--bp-ink)]"
+                />
+                <span>. Transformation comes from proximity and people. Information is searchable; wisdom is not.</span>
+              </div>
               <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-base italic text-[var(--bp-ink)]">
                 "AI helps you find answers. Only community forms character."
               </blockquote>
@@ -140,7 +158,16 @@ export default function ClarityUnsearchablePage() {
             </div>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <h3 className="mb-3 font-semibold text-[var(--bp-ink)]">The Searchable (Data)</h3>
+                <div className="mb-3 font-semibold text-[var(--bp-ink)] flex items-center gap-2">
+                  <span>The Searchable</span>
+                  <span className="text-sm">(</span>
+                  <FlipWords
+                    words={["Data", "Facts", "Code", "Syntax"]}
+                    duration={2800}
+                    className="text-base"
+                  />
+                  <span className="text-sm">)</span>
+                </div>
                 <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)] mb-4">
                   <li>• Facts</li>
                   <li>• Dates</li>
@@ -155,7 +182,16 @@ export default function ClarityUnsearchablePage() {
                 </div>
               </div>
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <h3 className="mb-3 font-semibold text-[var(--bp-ink)]">The Unsearchable (Spirit)</h3>
+                <div className="mb-3 font-semibold text-[var(--bp-ink)] flex items-center gap-2">
+                  <span>The Unsearchable</span>
+                  <span className="text-sm">(</span>
+                  <FlipWords
+                    words={["Spirit", "Wisdom", "Character", "Legacy"]}
+                    duration={2800}
+                    className="text-base"
+                  />
+                  <span className="text-sm">)</span>
+                </div>
                 <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)] mb-4">
                   <li>• Character</li>
                   <li>• Wisdom</li>
@@ -474,7 +510,14 @@ export default function ClarityUnsearchablePage() {
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
           <div className="space-y-8">
             <div className="text-center">
-              <h2 className="mb-2 text-2xl font-bold md:text-3xl">Build with Clarity. Move with Purpose.</h2>
+              <h2 className="mb-2 text-2xl font-bold md:text-3xl flex flex-wrap items-center justify-center gap-2">
+                <span>Build with</span>
+                <FlipWords
+                  words={["Clarity", "Purpose", "Intention", "Wisdom"]}
+                  duration={3000}
+                  className="text-2xl md:text-3xl"
+                />
+              </h2>
               <p className="text-sm text-[var(--bp-ink-soft)]">Build with clarity. Move with purpose. Honor the unsearchable.</p>
             </div>
             <div className="grid gap-6 md:grid-cols-3">
