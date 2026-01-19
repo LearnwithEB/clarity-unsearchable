@@ -26,9 +26,9 @@ export default function ClarityUnsearchablePage() {
                 <p className="text-lg font-medium text-[var(--bp-ink-soft)]">
                   AI, Life's Blueprint, and Wisdom Technology Cannot Store
                 </p>
-                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  This session links generative AI, Dr King's "Life's Blueprint" speech, and the unsearchable wisdom elders carry. The goal is to help young builders prompt with clarity and build in a way that lifts others.
-                </p>
+              <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
+                This session links generative AI, Dr King's "Life's Blueprint" speech, and the unsearchable wisdom elders carry. We explore how AI amplifies intention, why wisdom passes through memory not algorithms, and how to build tools that honor the story behind you as you build what is ahead of you.
+              </p>
               </div>
 
               {/* Right Column */}
@@ -74,7 +74,10 @@ export default function ClarityUnsearchablePage() {
           <div className="mx-auto max-w-4xl px-4">
             <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-4 text-center">
               <p className="font-mono text-xs text-[var(--bp-ink-soft)]">
-                AI literacy, generational wisdom, and the architecture of purpose.
+                AI Literacy, Generational Wisdom, and the Design of a Life's Blueprint
+              </p>
+              <p className="mt-2 font-mono text-xs italic text-[var(--bp-ink-soft)]">
+                AI amplifies what you bring to it. We must start with clarity.
               </p>
             </div>
           </div>
@@ -101,18 +104,21 @@ export default function ClarityUnsearchablePage() {
 
       {/* Main Content Sections */}
       <main className="mx-auto max-w-6xl px-4 py-12 md:px-8 md:py-16">
-        {/* Section A: The algorithm amplifies intention */}
+        {/* Section A: AI Amplifies. It Does Not Clarify. */}
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <p className="bp-section-kicker mb-2">Core principle</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">The algorithm amplifies intention</h2>
+              <h2 className="mb-4 text-2xl font-bold md:text-3xl">AI Amplifies. It Does Not Clarify.</h2>
               <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                Artificial intelligence is a strong engine, but it has no steering wheel. It amplifies whatever you bring to it.
+                We live in an age of infinite information. But as we embrace Generative AI, we must realize a fundamental truth: AI acts as a magnifying glass for the user's intent.
               </p>
-              <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                Your prompts carry your values, your assumptions, your worldview. Before you scale, you must clarify. Before you build, you must understand what you're amplifying.
+              <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
+                Input confusion, and you get amplified chaos. Input wisdom, and you get amplified impact. Transformation comes from proximity and people. Information is searchable; wisdom is not.
               </p>
+              <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-base italic text-[var(--bp-ink)]">
+                "AI helps you find answers. Only community forms character."
+              </blockquote>
             </div>
             <div className="relative h-64 overflow-hidden rounded-xl md:h-80">
               <Image
@@ -125,40 +131,51 @@ export default function ClarityUnsearchablePage() {
           </div>
         </section>
 
-        {/* Section B: Information is searchable. Wisdom is not. */}
+        {/* Section B: What Technology Cannot Store */}
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
           <div className="space-y-6">
             <div>
               <p className="bp-section-kicker mb-2">The distinction</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">Information is searchable. Wisdom is not.</h2>
+              <h2 className="mb-4 text-2xl font-bold md:text-3xl">What Technology Cannot Store</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
-              <div>
-                <h3 className="mb-3 font-semibold">What AI can find</h3>
-                <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)]">
-                  <li>• Historical facts and dates</li>
-                  <li>• Published speeches and texts</li>
-                  <li>• Patterns in data</li>
-                  <li>• Answers to questions with known solutions</li>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <h3 className="mb-3 font-semibold text-[var(--bp-ink)]">The Searchable (Data)</h3>
+                <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)] mb-4">
+                  <li>• Facts</li>
+                  <li>• Dates</li>
+                  <li>• Transcripts</li>
+                  <li>• Syntax</li>
                 </ul>
+                <div className="font-mono text-xs text-[var(--bp-ink-soft)] bg-[var(--bp-canvas)] p-3 rounded">
+                  <div className="mb-2">01100011 01101111 01100100 01100101</div>
+                  <div className="text-[var(--bp-ink-soft)]/70">
+                    // search_results = perform_query(key="knowledge", type="factual")
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 className="mb-3 font-semibold">What AI cannot find</h3>
-                <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)]">
-                  <li>• The weight of experience in a voice</li>
-                  <li>• The context of survival and resilience</li>
-                  <li>• The unspoken lessons passed through generations</li>
-                  <li>• The wisdom that lives in proximity to people</li>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <h3 className="mb-3 font-semibold text-[var(--bp-ink)]">The Unsearchable (Spirit)</h3>
+                <ul className="space-y-2 text-sm text-[var(--bp-ink-soft)] mb-4">
+                  <li>• Character</li>
+                  <li>• Wisdom</li>
+                  <li>• Faith</li>
+                  <li>• Legacy</li>
                 </ul>
+                <div className="text-xs italic text-[var(--bp-ink-soft)] border-l-2 border-[var(--bp-ink)] pl-3">
+                  Handwritten letters, lived experience, the weight of memory
+                </div>
               </div>
             </div>
-            <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-lg italic text-[var(--bp-ink)]">
-              "Some truth passes through memory, not algorithms. Transformation happens in proximity to people."
-            </blockquote>
+            <div className="text-center pt-4">
+              <p className="text-base font-semibold text-[var(--bp-ink)]">
+                AI helps you find answers. Only community forms character.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Section C: The source code – MLK at Barratt Junior High */}
+        {/* Section C: The Blueprint at Barratt Junior High */}
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="relative h-64 overflow-hidden rounded-xl md:h-80">
@@ -171,14 +188,18 @@ export default function ClarityUnsearchablePage() {
             </div>
             <div>
               <p className="bp-section-kicker mb-2">The source code</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">MLK at Barratt Junior High</h2>
+              <h2 className="mb-4 text-2xl font-bold md:text-3xl">The Blueprint at Barratt Junior High</h2>
+              <p className="mb-2 text-sm font-medium text-[var(--bp-ink)]">Philadelphia, PA | October 26, 1967</p>
+              <div className="h-px bg-[var(--bp-grid)] my-4" />
               <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                On October 26, 1967, Dr. King delivered "What Is Your Life's Blueprint?" to students at Barratt Junior High School in Philadelphia. This speech was not about dreams deferred—it was about architecture. About building a life with intention.
+                Six months before his assassination, Dr. Martin Luther King Jr. spoke to students at Barratt Junior High. He didn't speak about policy; he spoke about designing a life during a time of immense pressure.
               </p>
-              <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                He gave them three principles. Three pillars. Three lines of code for a life well-lived.
-              </p>
-        </div>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6 mt-6">
+                <blockquote className="font-serif text-base italic text-[var(--bp-ink)]">
+                  "Whenever a building is constructed, you usually have an architect who draws a blueprint. And that blueprint serves as the pattern, the guide, the model."
+                </blockquote>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -193,26 +214,43 @@ export default function ClarityUnsearchablePage() {
             <div className="grid gap-6 md:grid-cols-3">
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
                 <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">I</div>
-                <h3 className="mb-3 font-semibold">Principle of Dignity</h3>
+                <h3 className="mb-2 font-semibold">A Deep Belief in Dignity</h3>
+                <p className="mb-3 text-xs uppercase text-[var(--bp-ink-soft)]">The Concept of Somebodiness</p>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  "Do not allow anybody to make you feel that you are nobody. Always feel that you count. Always feel that you have worth, and always feel that your life has ultimate significance."
+                  The first step in the blueprint is a belief in one's own worth. In a world that attempts to categorize, profile, and index human value, the spirit must assert its own significance.
                 </p>
+                <blockquote className="text-sm font-semibold text-[var(--bp-ink)] border-t border-[var(--bp-grid)] pt-4">
+                  "Don't allow anybody to make you feel that you are nobody."
+                </blockquote>
               </div>
 
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
                 <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">II</div>
-                <h3 className="mb-3 font-semibold">Principle of Excellence</h3>
+                <h3 className="mb-3 font-semibold">The Determination to Achieve Excellence</h3>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  "Set out to do your life's work so well that nobody could do it better. If it falls your lot to be a street sweeper, sweep streets like Michelangelo painted pictures."
+                  Dr. King challenged the students to master their craft, regardless of their station. Excellence is your signature.
+                </p>
+                <blockquote className="font-serif text-sm italic text-[var(--bp-ink)] border-t border-[var(--bp-grid)] pt-4">
+                  "Sweep streets like Michelangelo painted pictures. Sweep streets like Beethoven composed music. Sweep streets like Shakespeare wrote poetry."
+                </blockquote>
+                <p className="mt-4 text-xs italic text-[var(--bp-ink-soft)]">
+                  Sweep streets so well that all the hosts of heaven and earth will have to pause and say: Here lived a great street sweeper who swept his job well.
                 </p>
               </div>
 
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
                 <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">III</div>
-                <h3 className="mb-3 font-semibold">Principle of Persistence</h3>
+                <h3 className="mb-3 font-semibold">A Commitment to Movement</h3>
                 <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  "If you cannot fly, run. If you cannot run, walk. If you cannot walk, crawl. But by all means, keep moving."
+                  A blueprint is useless without execution. Life is "no crystal stair," but forward momentum is non-negotiable.
                 </p>
+                <blockquote className="text-base font-bold text-[var(--bp-ink)] border-t border-[var(--bp-grid)] pt-4">
+                  "If you can't fly, RUN.<br />
+                  If you can't run, WALK.<br />
+                  If you can't walk, CRAWL.<br />
+                  But by all means,<br />
+                  KEEP MOVING."
+                </blockquote>
               </div>
             </div>
           </div>
@@ -232,40 +270,58 @@ export default function ClarityUnsearchablePage() {
             </motion.div>
             <div>
               <p className="bp-section-kicker mb-2">Unsearchable wisdom</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">In the Room: Deacon Jesse Grier</h2>
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                98 Years of<br />
+                Unsearchable<br />
+                Wisdom
+              </h2>
               <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                At 98 years old, Deacon Grier carries wisdom that no algorithm can index. His stories are not in databases. His insights are not in training data. They live in memory, in voice, in the space between words.
+                Introducing the Great-Great-Uncle. A witness to the Civil Rights era and the birth of the internet. He lived through the history we now prompt AI to summarize. His life holds lessons that technology cannot store.
               </p>
-              <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                This session brings his voice into the room. Not as data, but as presence. Not as information, but as wisdom.
-              </p>
-              <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-base italic text-[var(--bp-ink)]">
-                "The dream was not only about freedom. It was about discipline, faith, and unity."
+              <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-lg italic text-[var(--bp-ink)] mt-6">
+                "The dream was not only<br />
+                about freedom. It was<br />
+                about discipline, faith,<br />
+                and unity."
               </blockquote>
             </div>
           </div>
         </section>
 
-        {/* Section F: Truths that pass through memory */}
+        {/* Section F: Truths That Pass Through Memory, Not Algorithms */}
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
-          <div className="space-y-6">
-            <div>
-              <p className="bp-section-kicker mb-2">The transmission</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">Truths That Pass Through Memory, Not Algorithms</h2>
+          <div className="space-y-8">
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              <p className="bp-section-kicker text-left">The Searchable</p>
+              <p className="bp-section-kicker text-right">The Unsearchable</p>
             </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div>
-                <h3 className="mb-3 font-semibold">What algorithms miss</h3>
-                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  Algorithms process patterns. They find correlations. They generate responses based on training data. But they cannot hold the weight of lived experience. They cannot understand the context of survival, the nuance of resilience, the depth of generational wisdom.
+            <div>
+              <h2 className="mb-6 text-2xl font-bold md:text-3xl text-center">Truths That Pass Through Memory, Not Algorithms</h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <div className="mb-4 text-3xl">🏆</div>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink)] font-medium">
+                  "Hold on to your dignity. Protect your name. Your name goes further than your degree."
                 </p>
               </div>
-              <div>
-                <h3 className="mb-3 font-semibold">What memory preserves</h3>
-                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  Memory carries more than facts. It carries feeling, context, consequence. It carries the unspoken lessons that shape how we move through the world. These truths are not searchable because they are not stored—they are lived, shared, and passed down.
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <div className="mb-4 text-3xl">🔧</div>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink)] font-medium">
+                  "Young people today have more tools, but the same responsibility."
                 </p>
               </div>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <div className="mb-4 text-3xl">🌉</div>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink)] font-medium">
+                  "You stand on shoulders. Honor the story behind you as you build what is ahead of you."
+                </p>
+              </div>
+            </div>
+            <div className="text-center pt-6 border-t border-[var(--bp-grid)]">
+              <p className="font-serif text-lg italic text-[var(--bp-ink)]">
+                Some truth is caught, not just taught. It requires proximity to elders.
+              </p>
             </div>
           </div>
         </section>
@@ -275,40 +331,40 @@ export default function ClarityUnsearchablePage() {
           <div className="space-y-8">
             <div>
               <p className="bp-section-kicker mb-2">Interactive experience</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">Blueprint Radar & Drafting Table</h2>
+              <h2 className="mb-4 text-2xl font-bold md:text-3xl">The Interactive Experience</h2>
               <p className="mb-6 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
                 During this session, you'll engage with two interactive tools that bring the Life's Blueprint principles into practice.
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="relative h-48 overflow-hidden rounded-xl md:h-64">
-                <Image
-                  src="/images/interactive-radar.jpg"
-                  alt="Blueprint radar chart"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h3 className="mb-3 font-semibold">Blueprint Radar</h3>
+                <h3 className="mb-4 text-xl font-bold text-[var(--bp-ink)]">The Radar</h3>
+                <div className="relative h-48 overflow-hidden rounded-xl md:h-64 mb-4">
+                  <Image
+                    src="/images/interactive-radar.jpg"
+                    alt="Blueprint radar chart showing Dignity, Excellence, and Persistence"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  Visualize your alignment with the three principles: Dignity, Excellence, and Persistence. See where you stand and where you're growing.
+                  The Radar visualizes your alignment with the three principles: Dignity, Excellence, and Persistence. See where you stand and where you're growing.
                 </p>
               </div>
 
-              <div className="relative h-48 overflow-hidden rounded-xl md:h-64">
-                <Image
-                  src="/images/interactive-drafting-table.jpg"
-                  alt="Drafting table interface"
-                  fill
-                  className="object-cover"
-                />
-              </div>
               <div>
-                <h3 className="mb-3 font-semibold">Drafting Table</h3>
+                <h3 className="mb-4 text-xl font-bold text-[var(--bp-ink)]">The Drafting Table</h3>
+                <div className="relative h-48 overflow-hidden rounded-xl md:h-64 mb-4">
+                  <Image
+                    src="/images/interactive-drafting-table.jpg"
+                    alt="Drafting table interface prompting reflection"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                  Answer the question: "What is your persistence oath?" Draft your commitment to keep moving, no matter the pace.
+                  The Drafting Table prompts reflection. Answer the question: "What is your persistence oath?" Technology becomes a medium for exchange, not the source of wisdom.
                 </p>
               </div>
             </div>
@@ -320,49 +376,46 @@ export default function ClarityUnsearchablePage() {
           <div className="space-y-8">
             <div>
               <p className="bp-section-kicker mb-2">The framework</p>
-              <h2 className="mb-4 text-2xl font-bold md:text-3xl">The Clarity Framework</h2>
-              <p className="mb-6 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-                Before you prompt an AI, you prompt yourself. The Clarity Framework helps you align your intention with your impact.
+              <h2 className="mb-2 text-2xl font-bold md:text-3xl">The Clarity Framework</h2>
+              <p className="mb-6 text-sm font-medium text-[var(--bp-ink)]">
+                Clarity Shapes Calling Before You Scale. Before you prompt an AI, you must prompt yourself.
               </p>
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <div className="mb-2 text-2xl font-bold text-[var(--bp-ink)]">P</div>
-                <h3 className="mb-2 font-semibold">Problem</h3>
-                <p className="text-xs leading-relaxed text-[var(--bp-ink-soft)]">
-                  What are you solving? What gap are you filling?
+                <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">01</div>
+                <h3 className="mb-3 font-semibold text-lg">PROBLEM.</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] font-medium">
+                  What problem are you truly trying to solve?
                 </p>
               </div>
 
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <div className="mb-2 text-2xl font-bold text-[var(--bp-ink)]">P</div>
-                <h3 className="mb-2 font-semibold">People</h3>
-                <p className="text-xs leading-relaxed text-[var(--bp-ink-soft)]">
-                  Who are you serving? Who will this lift?
+                <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">02</div>
+                <h3 className="mb-3 font-semibold text-lg">PEOPLE.</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] font-medium">
+                  Who do you aim to serve?
                 </p>
               </div>
 
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <div className="mb-2 text-2xl font-bold text-[var(--bp-ink)]">O</div>
-                <h3 className="mb-2 font-semibold">Outcome</h3>
-                <p className="text-xs leading-relaxed text-[var(--bp-ink-soft)]">
-                  What change are you creating? What impact matters?
+                <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">03</div>
+                <h3 className="mb-3 font-semibold text-lg">OUTCOME.</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] font-medium">
+                  What does success look like?
                 </p>
               </div>
 
               <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
-                <div className="mb-2 text-2xl font-bold text-[var(--bp-ink)]">L</div>
-                <h3 className="mb-2 font-semibold">Legacy</h3>
-                <p className="text-xs leading-relaxed text-[var(--bp-ink-soft)]">
-                  What will remain? What will you pass forward?
+                <div className="mb-3 text-2xl font-bold text-[var(--bp-ink)]">04</div>
+                <h3 className="mb-3 font-semibold text-lg">LEGACY.</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] font-medium">
+                  What unsearchable wisdom are you embedding in this work?
                 </p>
               </div>
             </div>
 
-            <blockquote className="border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-lg italic text-[var(--bp-ink)]">
-              "Clarity shapes calling before you scale. Before you prompt an AI, you prompt yourself."
-            </blockquote>
           </div>
         </section>
 
@@ -390,7 +443,7 @@ export default function ClarityUnsearchablePage() {
           </div>
         </section>
 
-        {/* Section J: Bridge or hands band */}
+        {/* Section J: You Stand on Shoulders */}
         <motion.section
           style={{ y: bridgeY }}
           className="relative mb-12 overflow-hidden rounded-3xl border border-[var(--bp-grid)]"
@@ -398,34 +451,61 @@ export default function ClarityUnsearchablePage() {
           <div className="relative h-64 md:h-96">
             <Image
               src="/images/bridge-or-hands.jpg"
-              alt="Bridge or hands representing connection and legacy"
+              alt="Bridge representing past and future, building upon foundations"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-              <div className="text-center text-white">
-                <p className="mb-2 font-serif text-2xl italic md:text-3xl">
-                  "The dream was not only about freedom."
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+              <div className="text-center text-white px-4 max-w-3xl">
+                <h2 className="mb-4 text-3xl font-bold md:text-4xl">You Stand on Shoulders</h2>
+                <p className="mb-4 text-base md:text-lg leading-relaxed">
+                  Innovation is not about erasing the past; it is about building upon it. The next generation focuses on what the past generation preserved. If character isn't transferred, it is lost.
                 </p>
-                <p className="text-sm md:text-base">It was about discipline, faith, and unity.</p>
+                <blockquote className="font-serif text-lg md:text-xl italic">
+                  "Use these new tools to lift each other up, not tear each other down.<br />
+                  Honor the story behind you as you build what is ahead of you."
+                </blockquote>
               </div>
             </div>
           </div>
         </motion.section>
 
-        {/* Section K: Closing call to action */}
+        {/* Section K: Build with Clarity. Move with Purpose. */}
         <section className="bp-grid-soft mb-12 rounded-3xl border border-[var(--bp-grid)] p-5 md:p-8">
-          <div className="space-y-6 text-center">
-            <h2 className="text-2xl font-bold md:text-3xl">Join Us</h2>
-            <p className="mx-auto max-w-2xl text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-              This session is more than a presentation. It's an invitation to build with clarity, to prompt with intention, and to honor the wisdom that algorithms cannot store.
-            </p>
-            <p className="mx-auto max-w-2xl text-sm leading-relaxed text-[var(--bp-ink-soft)]">
-              Monday, January 19th. Celebrating Dr. Martin Luther King Jr. A National Black AI Literacy Event.
-            </p>
-            <blockquote className="mx-auto max-w-2xl border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-lg italic text-[var(--bp-ink)]">
-              "If you cannot fly, run. If you cannot run, walk. If you cannot walk, crawl. But by all means, keep moving."
-            </blockquote>
+          <div className="space-y-8">
+            <div className="text-center">
+              <h2 className="mb-2 text-2xl font-bold md:text-3xl">Build with Clarity. Move with Purpose.</h2>
+              <p className="text-sm text-[var(--bp-ink-soft)]">Build with clarity. Move with purpose. Honor the unsearchable.</p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <h3 className="mb-3 text-xl font-bold text-[var(--bp-ink)]">Stay Curious</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] mb-4">
+                  Ask questions technology cannot answer.
+                </p>
+              </div>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <h3 className="mb-3 text-xl font-bold text-[var(--bp-ink)]">Start with Purpose</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] mb-4">
+                  Don't just scale; scale something that matters.
+                </p>
+              </div>
+              <div className="bp-card rounded-xl border border-[var(--bp-grid)] p-6">
+                <h3 className="mb-3 text-xl font-bold text-[var(--bp-ink)]">Honor the Unsearchable</h3>
+                <p className="text-sm leading-relaxed text-[var(--bp-ink-soft)] mb-4">
+                  Recognize that your data is not your soul.
+                </p>
+              </div>
+            </div>
+            <div className="text-center pt-6 border-t border-[var(--bp-grid)]">
+              <p className="mb-4 text-sm leading-relaxed text-[var(--bp-ink-soft)]">
+                Monday, January 19th. Celebrating Dr. Martin Luther King Jr.<br />
+                A National Black AI Literacy Event.
+              </p>
+              <blockquote className="mx-auto max-w-2xl border-l-4 border-[var(--bp-ink)] pl-6 font-serif text-lg italic text-[var(--bp-ink)]">
+                "If you cannot fly, run. If you cannot run, walk. If you cannot walk, crawl. But by all means, keep moving."
+              </blockquote>
+            </div>
           </div>
         </section>
       </main>
